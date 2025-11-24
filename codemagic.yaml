@@ -24,7 +24,7 @@ workflows:
 
       - name: Build APK
         script: |
-          flutter build apk --release --build-number=$CM_BUILD_NUMBER
+          flutter build apk --release --build-number=${CM_BUILD_NUMBER}
 
       - name: Build iOS
         script: |
